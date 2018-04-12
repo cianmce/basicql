@@ -29,6 +29,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'graphql', '~> 1.8.0.pre10'
 
 group :development, :test do
+  gem 'pry-rails'
   gem 'graphiql-rails'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -38,6 +39,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'parser', '~> 2.5', '>= 2.5.0.5'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'

@@ -1,4 +1,5 @@
-BasicqlSchema = GraphQL::Schema.define do
-  mutation(Types::MutationType)
-  query(Types::QueryType)
+class BasicqlSchema < GraphQL::Schema
+    query(Types::QueryType)
+    # mutation(Mutation)
+
 end
